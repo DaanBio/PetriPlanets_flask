@@ -1,1 +1,1 @@
-web: gunicorn PetriPlanets:app
+web: gunicorn routes:app
