@@ -1,10 +1,11 @@
 import pyrebase
-from flask import render_template, request, redirect, session, url_for
-from app import app
+from flask import Flask, render_template, request, redirect, session, url_for
 import os
 import pandas as pd
 import numpy as np
 import random
+
+app = Flask(__name__)
 
 APIKEY = os.environ['APIKEY']
 
