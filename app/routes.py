@@ -7,7 +7,7 @@ import numpy as np
 import random
 
 config = {
-  'apiKey': "AIzaSyBPIH9Nx6Z4C1zmuDMy7I4IacJsX8VqgWM",
+  'apiKey': APIKEY,
   'authDomain': "petriplanets.firebaseapp.com",
   'projectId': "petriplanets",
   'databaseURL':"https://petriplanets-default-rtdb.europe-west1.firebasedatabase.app/",
