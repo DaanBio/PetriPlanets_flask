@@ -6,6 +6,8 @@ import pandas as pd
 import numpy as np
 import random
 
+APIKEY = os.environ['APIKEY']
+
 config = {
   'apiKey': APIKEY,
   'authDomain': "petriplanets.firebaseapp.com",
