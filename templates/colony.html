@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+    <body style="background-color:rgb(8, 8, 8);">
+        <h1 >Hey {{ name }}! So you want to colonize planet {{ planet_name }}?</h1>
+        <p>  will give you a number of benefits depending on the amount of effort you put in your colonization. There are two tiers of colonization. Every new tier comes at a new cost.   </p>
+        <p style="font-size:20;"> Colonization I --$100</p>
+        <p>You plant a flag and the planet is yours. This is documented in an NFT (Non-Fungible Token) and includes the story and the artwork.</p>
+        <p style="font-size:20;">Colonization II --$200</p>
+        <p>You start to perform scientific research on your new planet, next to the NFT you'll get the artwork printed out on the highest quality foto print with high quality perspex.</p>
+        <p>If you want to colonize this planet send a message to <a href="mailto:daan@vandervorm.com">daan@vandervorm.com</a> and include the name of the planet you wnat to colonize.</p>
+        <hr class="my-4">
+        <form class="form" action="#" method="post">
+            <input class="button" type="submit" value="Go back">
+        </form>
+        
+    </body>
+{% endblock %}
+
+    
+    
+    

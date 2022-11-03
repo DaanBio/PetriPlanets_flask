@@ -19,9 +19,23 @@
         <p>{{ planet_story }}</p>
         <form class="form" action="#" method="post">
             <input class="button" type="submit" name="action" value="Travel to the next planet">
-            <input class="button" type="submit" name="action" value="Like">
-            <input class="button" type="submit" name="action" value="Dislike">
         </form>
-        
+        <form class="form" action="#" method="post">    
+            <input class="button" type="submit" name="action1" value="Like">
+        </form>
+        <form class="form" action="#" method="post">    
+            <input class="button" type="submit" name="action2" value="Dislike">
+        </form>
+        <form class="form" action="#" method="post">    
+            <input class="button" type="submit" name="action3" value="Colonize">
+        </form>
+        <form class="form" action="#" method="post">
+            <div class="form-group">
+            <label for="exampleInputPassword1">Ask any question about planet {{ planet_name }}:</label>
+            <input type="username" class="form-control" name="action4" placeholder="Example: Are there penguins on this planet?">
+            </div>
+            <button type="submit" name="action4" class="button">Ask question</button>
+        </form>
+        <p>{{ answer }}</p>
     </body>
 {% endblock %}

@@ -4,15 +4,13 @@
 
 
     
-      <body style="background-color:rgb(8, 8, 8);">
+      <body class="body">
         <h1 class=".h">Welcom the universe of PetriPlanets</h1> 
+        {% if smessage == 1 %}
+          <p class=".p">You succesfully signed up!</p>
+        {% endif %}
         <p class=".p">Please login to continue</p>
         <hr class="my-4">
-        {% if smessage %}
-          <div class="alert alert-success">
-            {{ smessage }}
-          </div>
-        {% endif %}
         {% if umessage %}
           <div class="alert alert-danger">
             {{ umessage }}
