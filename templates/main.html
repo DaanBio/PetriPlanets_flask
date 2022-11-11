@@ -3,11 +3,12 @@
 {% block content %}
 
 
-    <body style="background-color:rgb(8, 8, 8);">
+    <body style="background-color:#040403;">
         <div class="imgbox">
             <img class="center-fit" src="{{ img }}" alt="test">
         </div>
         <h1>{{ planet_name }}</h1>
+        <p>Number of visitors at planet {{ planet_name }}: {{ visitors }}</p>
         {% if like_status == 1 %}
             <p>&#10084;</p>
         {% elif like_status == -1 %}
@@ -15,27 +16,30 @@
         {% else %}
         {% endif %}
 
-
         <p>{{ planet_story }}</p>
+        <div style='float:left'>
+        <form class="form" action="#" method="post">    
+            <input class="button" type="submit" name="action1" value="Like &#10084;">
+        </form>
+        </div>
+        <div style='float:right'>
+        <form class="form" action="#" method="post">    
+            <input class="button" type="submit" name="action2" value="Dislike &#128078;">
+        </form>
+        </div>
+        <br>
+
         <form class="form" action="#" method="post">
-            <input class="button" type="submit" name="action" value="Travel to the next planet">
+            <input class="button" type="submit" name="action" value="Travel to the next planet &#9193;">
         </form>
         <form class="form" action="#" method="post">    
-            <input class="button" type="submit" name="action1" value="Like">
+            <input class="button" type="submit" name="action3" value="Colonize &#127988;">
         </form>
         <form class="form" action="#" method="post">    
-            <input class="button" type="submit" name="action2" value="Dislike">
+            <input class="button" type="submit" name="action7" value="Ask questions &#128302;">
         </form>
         <form class="form" action="#" method="post">    
-            <input class="button" type="submit" name="action3" value="Colonize">
+            <input class="button" type="submit" name="action5" value="&#10084; {{ user_name }}'s Liked Planets &#10084;">
         </form>
-        <form class="form" action="#" method="post">
-            <div class="form-group">
-            <label for="exampleInputPassword1">Ask any question about planet {{ planet_name }}:</label>
-            <input type="username" class="form-control" name="action4" placeholder="Example: Are there penguins on this planet?">
-            </div>
-            <button type="submit" name="action4" class="button">Ask question</button>
-        </form>
-        <p>{{ answer }}</p>
     </body>
 {% endblock %}
