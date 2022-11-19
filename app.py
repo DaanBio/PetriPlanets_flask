@@ -53,6 +53,8 @@ auth = firebase.auth()
 db=firebase.database()
 storage=firebase.storage()
 
+#db.child("visitors").set(likes_data)  
+
 @app.route('/')
 @app.route('/index', methods=['GET', 'POST'])
 def index():
